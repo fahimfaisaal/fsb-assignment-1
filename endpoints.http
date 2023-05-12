@@ -1,0 +1,10 @@
+## generate random nubmer
+GET http://localhost:4000/api/random-number?start=5&end=50
+
+### generate fake person
+GET http://localhost:4000/api/fake-person?properties=firstName,lastname,email,age
+
+### count chars
+GET http://localhost:4000/api/count-chars/abcd123^&*@\
+
+

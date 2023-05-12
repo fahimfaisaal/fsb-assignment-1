@@ -4,7 +4,6 @@ export const countCharsController = (req, res) => {
   try {
     const { string } = req.params
 
-    console.log({ string: String.raw`${string}` })
     if (string === undefined) {
       const error = new Error('"string" query is missing!')
       error.statusCode = 400;

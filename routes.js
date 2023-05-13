@@ -11,6 +11,6 @@ router.get('/random-number', generateRandomNumberController);
 
 router.get('/fake-person', generateFakePersonController);
 
-router.get('/count-chars/:string', countCharsController);
+router.get('/count-chars', countCharsController);
 
 export default router;

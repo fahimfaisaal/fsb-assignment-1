@@ -2,7 +2,7 @@ import { getRandomNumber, generateFakePerson, countCharsV2 } from './services';
 
 export const countCharsController = (req, res) => {
   try {
-    const { string } = req.params
+    const { string } = req.query
 
     if (string === undefined) {
       const error = new Error('"string" query is missing!')

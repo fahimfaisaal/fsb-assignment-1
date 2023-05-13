@@ -1,4 +1,4 @@
-import { getRandomNumber, generateFakePerson, countChars, } from './services';
+import { getRandomNumber, generateFakePerson, countCharsV2 } from './services';
 
 export const countCharsController = (req, res) => {
   try {
@@ -10,7 +10,7 @@ export const countCharsController = (req, res) => {
       throw error
     }
 
-    res.status(200).json(countChars(string))
+    res.status(200).json(countCharsV2(string))
   } catch (e) {
     const status = e.statusCode || 500
     res.status(status).json({
